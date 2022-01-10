@@ -1,10 +1,13 @@
 package com.qa.SpringRum.domain;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 
+@Entity
 public class Rum {
 	
 	@Id
@@ -14,10 +17,10 @@ public class Rum {
 	@NotNull(message = "What is the name of the Rum?")
 	private String name;
 	
-	
+	@Column
 	private long alcoholpercentage;
 	
-	
+	@Column
 	private String type;
 	
 	
